@@ -8,11 +8,11 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-black">Built for construction site reliability</h2>
-            <p className="mt-5 leading-7 text-gray-600">Our company supports customers with excavation works, land clearing, site preparation and machinery support for on-site projects.</p>
+            <p className="mt-5 leading-7 text-slate-600">Our company supports customers with excavation works, land clearing, site preparation and machinery support for on-site projects.</p>
           </div>
-          <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+          <div className="rounded-3xl bg-white p-8 shadow-sm shadow-slate-200/70 ring-1 ring-slate-200">
             <h3 className="text-xl font-black">Why customers work with us</h3>
-            <ul className="mt-5 space-y-3 text-gray-700">
+            <ul className="mt-5 space-y-3 text-slate-700">
               <li>• Experienced machinery operators</li>
               <li>• Reliable excavators and equipment</li>
               <li>• Fast response for project enquiries</li>

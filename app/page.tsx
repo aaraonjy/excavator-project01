@@ -26,28 +26,28 @@ export default function HomePage() {
           </div>
           <div className="grid gap-5 md:grid-cols-4">
             {services.map((service) => (
-              <div key={service} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
+              <div key={service} className="rounded-2xl bg-white p-6 shadow-sm shadow-slate-200/70 ring-1 ring-slate-200">
                 <div className="mb-5 h-12 w-12 rounded-xl bg-construction-yellow" />
                 <h3 className="text-lg font-black">{service}</h3>
-                <p className="mt-3 text-sm leading-6 text-gray-600">Suitable for construction, industrial and site preparation projects.</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600">Suitable for construction, industrial and site preparation projects.</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-100 px-5 py-20">
+      <section className="bg-slate-100 px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">Our Machinery</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Machinery that proves our capability</h2>
-            <p className="mt-5 text-gray-600">Showcase the excavators and equipment available so customers can understand what type of projects the company can support.</p>
-            <Link href="/machinery" className="mt-8 inline-flex rounded-full bg-black px-7 py-3 font-bold text-white hover:bg-gray-800">View Machinery</Link>
+            <p className="mt-5 text-slate-600">Showcase the excavators and equipment available so customers can understand what type of projects the company can support.</p>
+            <Link href="/machinery" className="mt-8 inline-flex rounded-full bg-construction-dark px-7 py-3 font-bold text-white hover:bg-slate-800">View Machinery</Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {machines.map((machine) => (
               <div key={machine} className="rounded-2xl bg-white p-6 shadow-sm">
-                <div className="mb-4 h-28 rounded-xl bg-gradient-to-br from-yellow-300 to-gray-300" />
+                <div className="mb-4 h-28 rounded-xl bg-gradient-to-br from-yellow-200 to-slate-200" />
                 <h3 className="font-black">{machine}</h3>
               </div>
             ))}
@@ -58,7 +58,7 @@ export default function HomePage() {
       <section className="px-5 py-20">
         <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-3xl font-black md:text-4xl">Need excavation services for your site?</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-gray-600">Contact us with your project location and requirements. Our team will respond as soon as possible.</p>
+          <p className="mx-auto mt-4 max-w-2xl text-slate-600">Contact us with your project location and requirements. Our team will respond as soon as possible.</p>
           <Link href="/contact" className="mt-8 inline-flex rounded-full bg-construction-yellow px-8 py-4 font-bold text-black hover:bg-yellow-300">Get Quotation</Link>
         </div>
       </section>

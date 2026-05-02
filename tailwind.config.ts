@@ -6,9 +6,11 @@ const config: Config = {
     extend: {
       colors: {
         construction: {
-          yellow: "#FBBF24",
-          dark: "#111111",
-          graphite: "#1F2937",
+          yellow: "#FACC15",
+          dark: "#0F172A",
+          graphite: "#111827",
+          soft: "#F8FAFC",
+          border: "#E5E7EB",
         },
       },
     },

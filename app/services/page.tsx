@@ -14,9 +14,9 @@ export default function ServicesPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
           {services.map(([title, desc]) => (
-            <div key={title} className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+            <div key={title} className="rounded-3xl bg-white p-8 shadow-sm shadow-slate-200/70 ring-1 ring-slate-200">
               <h2 className="text-2xl font-black">{title}</h2>
-              <p className="mt-4 leading-7 text-gray-600">{desc}</p>
+              <p className="mt-4 leading-7 text-slate-600">{desc}</p>
             </div>
           ))}
         </div>

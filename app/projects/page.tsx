@@ -9,11 +9,11 @@ export default function ProjectsPage() {
       <section className="px-5 py-20">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
           {projects.map((project) => (
-            <div key={project} className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-black/5">
-              <div className="h-64 bg-gradient-to-br from-gray-300 to-yellow-200" />
+            <div key={project} className="overflow-hidden rounded-3xl bg-white shadow-sm shadow-slate-200/70 ring-1 ring-slate-200">
+              <div className="h-64 bg-gradient-to-br from-slate-200 to-yellow-100" />
               <div className="p-6">
                 <h2 className="text-xl font-black">{project}</h2>
-                <p className="mt-3 text-gray-600">Add real project description, location and photos here.</p>
+                <p className="mt-3 text-slate-600">Add real project description, location and photos here.</p>
               </div>
             </div>
           ))}
