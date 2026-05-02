@@ -1,95 +1,7 @@
 import Link from "next/link";
 
-type Service = {
-  title: string;
-  description: string;
-  icon: JSX.Element;
-};
-
-type Machine = {
-  name: string;
-  image: string;
-  alt: string;
-};
-
-const iconClassName = "h-6 w-6 text-black";
-
-const services: Service[] = [
-  {
-    title: "Excavation Works",
-    description: "Suitable for construction, industrial and site preparation projects.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={iconClassName}>
-        <path d="M3 19h18" />
-        <path d="M5 19l3-7h5l3 7" />
-        <path d="M10 12V7h3a4 4 0 0 1 4 4v1" />
-        <path d="M17 12h3l-2 4" />
-        <circle cx="8" cy="19" r="2" />
-        <circle cx="16" cy="19" r="2" />
-      </svg>
-    ),
-  },
-  {
-    title: "Land Clearing",
-    description: "Clear land areas efficiently for construction, access roads and site preparation.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={iconClassName}>
-        <path d="M12 3v18" />
-        <path d="M7 8c0-3 2-5 5-5s5 2 5 5c0 2-1 4-5 6-4-2-5-4-5-6Z" />
-        <path d="M4 21h16" />
-        <path d="M8 21l4-5 4 5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Site Preparation",
-    description: "Prepare project sites for foundation, earthwork and construction activities.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={iconClassName}>
-        <path d="M3 21h18" />
-        <path d="M5 21l4-11h6l4 11" />
-        <path d="M9 10l3-7 3 7" />
-        <path d="M8 15h8" />
-      </svg>
-    ),
-  },
-  {
-    title: "Demolition Support",
-    description: "Machinery support for demolition, breaking work and heavy-duty site tasks.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={iconClassName}>
-        <path d="M14 4l6 6" />
-        <path d="M11 7l6 6" />
-        <path d="M5 21l9-9" />
-        <path d="M4 20l-1-1 7-7 2 2-7 7-1-1Z" />
-        <path d="M15 3l6 6-4 4-6-6 4-4Z" />
-      </svg>
-    ),
-  },
-];
-
-const machines: Machine[] = [
-  {
-    name: "20 Ton Excavator",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80",
-    alt: "20 ton excavator working at a construction site",
-  },
-  {
-    name: "Mini Excavator",
-    image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=900&q=80",
-    alt: "mini excavator for compact site work",
-  },
-  {
-    name: "Hydraulic Breaker",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80",
-    alt: "hydraulic breaker machinery support for demolition work",
-  },
-  {
-    name: "Long Arm Excavator",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=900&q=80",
-    alt: "long arm excavator for earthwork and construction projects",
-  },
-];
+const services = ["Excavation Works", "Land Clearing", "Site Preparation", "Demolition Support"];
+const machines = ["20 Ton Excavator", "Mini Excavator", "Hydraulic Breaker", "Long Arm Excavator"];
 
 export default function HomePage() {
   return (
@@ -130,12 +42,10 @@ export default function HomePage() {
           </div>
           <div className="grid gap-5 md:grid-cols-4">
             {services.map((service) => (
-              <div key={service.title} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur-sm">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-construction-yellow shadow-lg shadow-yellow-500/10">
-                  {service.icon}
-                </div>
-                <h3 className="text-lg font-black">{service.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-white/65">{service.description}</p>
+              <div key={service} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur-sm">
+                <div className="mb-5 h-12 w-12 rounded-xl bg-construction-yellow" />
+                <h3 className="text-lg font-black">{service}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/65">Suitable for construction, industrial and site preparation projects.</p>
               </div>
             ))}
           </div>
@@ -154,15 +64,9 @@ export default function HomePage() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {machines.map((machine) => (
-              <div key={machine.name} className="overflow-hidden rounded-2xl bg-construction-soft shadow-sm ring-1 ring-neutral-300">
-                <img
-                  src={machine.image}
-                  alt={machine.alt}
-                  className="h-40 w-full object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="font-black">{machine.name}</h3>
-                </div>
+              <div key={machine} className="rounded-2xl bg-construction-soft p-6 shadow-sm ring-1 ring-neutral-300">
+                <div className="mb-4 h-28 rounded-xl bg-gradient-to-br from-yellow-200 to-neutral-300" />
+                <h3 className="font-black">{machine}</h3>
               </div>
             ))}
           </div>
