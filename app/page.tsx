@@ -26,7 +26,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/projects"
-              className="rounded-full border border-white/25 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-sm transition hover:bg-white hover:text-black"
+              className="rounded-full border border-white/25 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-sm transition hover:bg-construction-light hover:text-black"
             >
               View Projects
             </Link>
@@ -64,7 +64,7 @@ export default function HomePage() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {machines.map((machine) => (
-              <div key={machine} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-200">
+              <div key={machine} className="rounded-2xl bg-construction-soft p-6 shadow-sm ring-1 ring-neutral-300">
                 <div className="mb-4 h-28 rounded-xl bg-gradient-to-br from-yellow-200 to-neutral-300" />
                 <h3 className="font-black">{machine}</h3>
               </div>
