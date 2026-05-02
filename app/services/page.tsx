@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 const services = [
@@ -26,6 +27,16 @@ export default function ServicesPage() {
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">Project Enquiry</p>
           <h2 className="mt-3 text-3xl font-black md:text-4xl">Need help for your site work?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-neutral-600">Send your project location and job scope so the team can understand your requirements.</p>
+        </div>
+      </section>
+      <section className="bg-construction-graphite px-5 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-construction-yellow">Get Started</p>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Ready to discuss your excavation requirements?</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-white/65">Contact us with your project details and our team will advise the suitable machinery support.</p>
+          <Link href="/contact" className="mt-8 inline-flex rounded-full bg-construction-yellow px-8 py-4 font-bold text-black transition hover:bg-yellow-300">
+            Get Quotation
+          </Link>
         </div>
       </section>
     </>

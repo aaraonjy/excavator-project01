@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 const projects = ["Site Preparation Project", "Land Clearing Work", "Foundation Excavation", "Construction Earthwork"];
@@ -23,6 +24,16 @@ export default function ProjectsPage() {
         <div className="mx-auto max-w-7xl text-center">
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">Proof Of Work</p>
           <h2 className="mt-3 text-3xl font-black md:text-4xl">Real project photos help build customer confidence</h2>
+        </div>
+      </section>
+      <section className="bg-construction-graphite px-5 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-construction-yellow">Get Started</p>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Have a project site that needs excavation work?</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-white/65">Contact us with your project location and requirements. Our team will respond as soon as possible.</p>
+          <Link href="/contact" className="mt-8 inline-flex rounded-full bg-construction-yellow px-8 py-4 font-bold text-black transition hover:bg-yellow-300">
+            Get Quotation
+          </Link>
         </div>
       </section>
     </>

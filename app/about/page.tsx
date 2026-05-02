@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 export default function AboutPage() {
@@ -27,6 +28,16 @@ export default function AboutPage() {
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">Our Focus</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-black">Helping customers complete site work with the right machinery support</h2>
           <p className="mt-5 max-w-3xl leading-7 text-neutral-600">The website is designed to show customers what the company does, what equipment is available, and how to contact the team quickly for project enquiries.</p>
+        </div>
+      </section>
+      <section className="bg-construction-graphite px-5 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-construction-yellow">Get Started</p>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Need excavation support for your next project?</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-white/65">Contact us with your project location and requirements. Our team will respond as soon as possible.</p>
+          <Link href="/contact" className="mt-8 inline-flex rounded-full bg-construction-yellow px-8 py-4 font-bold text-black transition hover:bg-yellow-300">
+            Get Quotation
+          </Link>
         </div>
       </section>
     </>

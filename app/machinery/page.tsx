@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 const machinery = ["20 Ton Excavator", "Mini Excavator", "Hydraulic Breaker", "Long Arm Excavator", "Wheel Loader", "Lorry Support"];
@@ -23,6 +24,16 @@ export default function MachineryPage() {
         <div className="mx-auto max-w-7xl">
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">Capability</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-black">Machinery details help customers understand what type of work can be supported</h2>
+        </div>
+      </section>
+      <section className="bg-construction-graphite px-5 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-construction-yellow">Get Started</p>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Need the right machinery for your job site?</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-white/65">Share your site requirements with us and we will advise suitable machinery support.</p>
+          <Link href="/contact" className="mt-8 inline-flex rounded-full bg-construction-yellow px-8 py-4 font-bold text-black transition hover:bg-yellow-300">
+            Contact Us
+          </Link>
         </div>
       </section>
     </>
