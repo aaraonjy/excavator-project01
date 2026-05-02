@@ -73,14 +73,6 @@ export default function ContactPage() {
                   loading="lazy"
                 />
               </div>
-
-              <a
-                href="https://wa.me/60123456789"
-                target="_blank"
-                className="inline-flex rounded-full bg-construction-yellow px-7 py-3 font-bold text-black transition hover:bg-yellow-300"
-              >
-                WhatsApp Now
-              </a>
             </div>
           </div>
         </div>
@@ -88,9 +80,9 @@ export default function ContactPage() {
         <div className="mx-auto mt-10 max-w-7xl rounded-3xl border border-white/10 bg-white/5 p-8 shadow-sm backdrop-blur-sm md:p-12">
           <div className="mb-8 max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-construction-yellow">
-              Get A Quote
+              General Enquiry
             </p>
-            <h2 className="mt-3 text-3xl font-black">Quotation Enquiry Form</h2>
+            <h2 className="mt-3 text-3xl font-black">Tell Us About Your Project</h2>
             <p className="mt-4 text-white/65">
               Submit your project location and requirements so our team can review the job scope and respond with suitable excavation support.
             </p>
