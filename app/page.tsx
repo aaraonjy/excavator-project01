@@ -34,25 +34,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-5 py-20">
+      <section className="bg-construction-graphite px-5 py-24 text-white">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">What We Do</p>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-construction-yellow">What We Do</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Excavation services for job sites</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-4">
             {services.map((service) => (
-              <div key={service} className="rounded-2xl bg-white p-6 shadow-sm shadow-slate-200/70 ring-1 ring-slate-200">
+              <div key={service} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/10">
                 <div className="mb-5 h-12 w-12 rounded-xl bg-construction-yellow" />
-                <h3 className="text-lg font-black">{service}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">Suitable for construction, industrial and site preparation projects.</p>
+                <h3 className="text-lg font-black text-white">{service}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/65">Suitable for construction, industrial and site preparation projects.</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-100 px-5 py-20">
+      <section className="bg-slate-100 px-5 py-24 text-slate-950">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-yellow-600">Our Machinery</p>
@@ -73,10 +73,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-5 py-20">
-        <div className="mx-auto max-w-7xl text-center">
-          <h2 className="text-3xl font-black md:text-4xl">Need excavation services for your site?</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-slate-600">Contact us with your project location and requirements. Our team will respond as soon as possible.</p>
+      <section className="bg-construction-dark px-5 py-24 text-center text-white">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-construction-yellow">Project Enquiry</p>
+          <h2 className="mt-3 text-3xl font-black md:text-4xl">Need excavation services for your site?</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-white/65">Contact us with your project location and requirements. Our team will respond as soon as possible.</p>
           <Link href="/contact" className="mt-8 inline-flex rounded-full bg-construction-yellow px-8 py-4 font-bold text-black transition hover:bg-yellow-300">
             Get Quotation
           </Link>
