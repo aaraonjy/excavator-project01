@@ -6,7 +6,9 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; background: #F8FAFC; color: #0F172A; }
 .hero-bg {
-  background-image: linear-gradient(rgba(15,23,42,.78), rgba(15,23,42,.62)), url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1800&q=80');
+  background-image:
+    linear-gradient(rgba(0,0,0,.78), rgba(15,23,42,.68), rgba(0,0,0,.82)),
+    url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1800&q=80');
   background-size: cover;
   background-position: center;
 }
