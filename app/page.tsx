@@ -1,7 +1,54 @@
 import Link from "next/link";
 
-const services = ["Excavation Works", "Land Clearing", "Site Preparation", "Demolition Support"];
-const machines = ["20 Ton Excavator", "Mini Excavator", "Hydraulic Breaker", "Long Arm Excavator"];
+const services = [
+  {
+    title: "Excavation Works",
+    description: "Suitable for construction, industrial and site preparation projects.",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" d="M4 18h16M7 18l2-7h5l3 7M9 11l-2-3h4l1 3M15 13h3l2 5M5 21h3m8 0h3" />
+    ),
+  },
+  {
+    title: "Land Clearing",
+    description: "Suitable for clearing land areas before construction and development work.",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M8 7c-2 0-4 2-4 4 3 0 5-1 6-4M16 7c2 0 4 2 4 4-3 0-5-1-6-4M7 15h10M5 21h14" />
+    ),
+  },
+  {
+    title: "Site Preparation",
+    description: "Suitable for preparing construction sites before project execution.",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" d="M4 18h16M6 14l4-4 3 3 5-6M8 21h8M15 7h4v4" />
+    ),
+  },
+  {
+    title: "Demolition Support",
+    description: "Suitable for selected demolition, breaking and clearing support works.",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" d="M14 4l6 6-3 3-6-6 3-3zM11 7l-7 7v4h4l7-7M4 21h16" />
+    ),
+  },
+];
+
+const machines = [
+  {
+    title: "20 Ton Excavator",
+    image: "https://images.unsplash.com/photo-1574041324658-e3f0e3d4ef8a?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Mini Excavator",
+    image: "https://images.unsplash.com/photo-1597047084897-51e81819a499?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Hydraulic Breaker",
+    image: "https://images.unsplash.com/photo-1581093458791-9d42cc0a0edb?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Long Arm Excavator",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+  },
+];
 
 export default function HomePage() {
   return (
@@ -42,10 +89,21 @@ export default function HomePage() {
           </div>
           <div className="grid gap-5 md:grid-cols-4">
             {services.map((service) => (
-              <div key={service} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur-sm">
-                <div className="mb-5 h-12 w-12 rounded-xl bg-construction-yellow" />
-                <h3 className="text-lg font-black">{service}</h3>
-                <p className="mt-3 text-sm leading-6 text-white/65">Suitable for construction, industrial and site preparation projects.</p>
+              <div key={service.title} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur-sm">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-construction-yellow text-black shadow-lg shadow-yellow-500/10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.2}
+                    stroke="currentColor"
+                    className="h-7 w-7"
+                  >
+                    {service.icon}
+                  </svg>
+                </div>
+                <h3 className="text-lg font-black">{service.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/65">{service.description}</p>
               </div>
             ))}
           </div>
@@ -64,9 +122,11 @@ export default function HomePage() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {machines.map((machine) => (
-              <div key={machine} className="rounded-2xl bg-construction-soft p-6 shadow-sm ring-1 ring-neutral-300">
-                <div className="mb-4 h-28 rounded-xl bg-gradient-to-br from-yellow-200 to-neutral-300" />
-                <h3 className="font-black">{machine}</h3>
+              <div key={machine.title} className="overflow-hidden rounded-2xl bg-construction-soft shadow-sm ring-1 ring-neutral-300">
+                <img src={machine.image} alt={machine.title} className="h-36 w-full object-cover" />
+                <div className="p-5">
+                  <h3 className="font-black">{machine.title}</h3>
+                </div>
               </div>
             ))}
           </div>
