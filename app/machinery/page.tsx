@@ -5,32 +5,32 @@ const machinery = [
   {
     title: "20 Ton Excavator",
     description: "Suitable for medium to large excavation works, earthmoving, foundation digging and construction site support.",
-    image: "https://images.unsplash.com/photo-1574041324658-e3f0e3d4ef8a?auto=format&fit=crop&w=1200&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kato%20Excavator.jpg?width=1200",
   },
   {
     title: "Mini Excavator",
     description: "Suitable for smaller job sites, tight access areas, drainage works and light excavation support.",
-    image: "https://images.unsplash.com/photo-1597047084897-51e81819a499?auto=format&fit=crop&w=1200&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Hitachi%20Mini%20Excavator.jpg?width=1200",
   },
   {
     title: "Hydraulic Breaker",
     description: "Suitable for breaking concrete, rock, road surfaces and demolition-related site preparation works.",
-    image: "https://images.unsplash.com/photo-1581093458791-9d42cc0a0edb?auto=format&fit=crop&w=1200&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jackhammer%20On%20An%20Excavator%20End.jpg?width=1200",
   },
   {
     title: "Long Arm Excavator",
     description: "Suitable for deep excavation, slope work, riverbank projects and extended-reach site requirements.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Excavator%20CAT%20325B%20LN%208707.jpg?width=1200",
   },
   {
     title: "Wheel Loader",
     description: "Suitable for material loading, site clearing, stockpile handling and general construction support.",
-    image: "https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=1200&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Wheel-loader02.jpg?width=1200",
   },
   {
     title: "Lorry Support",
     description: "Suitable for transporting soil, aggregates, debris and construction materials for project sites.",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Construction%20Truck.jpg?width=1200",
   },
 ];
 

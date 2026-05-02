@@ -34,19 +34,19 @@ const services = [
 const machines = [
   {
     title: "20 Ton Excavator",
-    image: "https://images.unsplash.com/photo-1574041324658-e3f0e3d4ef8a?auto=format&fit=crop&w=900&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kato%20Excavator.jpg?width=900",
   },
   {
     title: "Mini Excavator",
-    image: "https://images.unsplash.com/photo-1597047084897-51e81819a499?auto=format&fit=crop&w=900&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Hitachi%20Mini%20Excavator.jpg?width=900",
   },
   {
     title: "Hydraulic Breaker",
-    image: "https://images.unsplash.com/photo-1581093458791-9d42cc0a0edb?auto=format&fit=crop&w=900&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jackhammer%20On%20An%20Excavator%20End.jpg?width=900",
   },
   {
     title: "Long Arm Excavator",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Excavator%20CAT%20325B%20LN%208707.jpg?width=900",
   },
 ];
 
