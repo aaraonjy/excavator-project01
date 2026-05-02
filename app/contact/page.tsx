@@ -17,9 +17,10 @@ export default function ContactPage() {
             </form>
             <p className="mt-4 text-sm text-white/45">Note: This form is UI only. Add API later if you want email submission.</p>
           </div>
-          <div className="rounded-3xl bg-construction-light p-8 text-neutral-950">
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 text-white shadow-sm backdrop-blur-sm">
             <h2 className="text-2xl font-black">Get in touch directly</h2>
-            <div className="mt-6 space-y-4 text-neutral-600">
+            <div className="mt-6 space-y-4 text-white/65">
               <p>Phone: +60 12-345 6789</p>
               <p>Email: enquiry@example.com</p>
               <p>Service Area: Malaysia</p>
