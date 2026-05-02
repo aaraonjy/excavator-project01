@@ -11,7 +11,7 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 z-40 w-full border-b border-white/10 bg-slate-950/15 backdrop-blur-md">
+    <header className="fixed left-0 top-0 z-40 w-full border-b border-white/10 bg-black/35 shadow-lg shadow-black/30 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
         <Link href="/" className="text-xl font-black tracking-tight text-white drop-shadow-sm">
           EXCAVATOR<span className="text-construction-yellow">CO</span>

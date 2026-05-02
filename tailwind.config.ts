@@ -7,10 +7,12 @@ const config: Config = {
       colors: {
         construction: {
           yellow: "#FACC15",
-          dark: "#0F172A",
-          graphite: "#111827",
-          soft: "#F8FAFC",
-          border: "#E5E7EB",
+          dark: "#050505",
+          graphite: "#171717",
+          panel: "#222222",
+          light: "#F2F2F2",
+          soft: "#FAFAFA",
+          border: "#D9D9D9",
         },
       },
     },
